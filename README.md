@@ -1,2 +1,2 @@
 # Portfolio
-A Portfolio of all my notable projects.
+A portfolio of all my notable projects.
