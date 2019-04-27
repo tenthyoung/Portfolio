@@ -8,20 +8,20 @@ $(document).ready(function(){
 
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 300) {
+        if ($(window).scrollTop() > 5 || document.body.scrollTop > 5 || document.documentElement.scrollTop > 5 ) {
             $('nav').addClass('white');
-            // $('#brandLogoPic').animate({
-            //     width: "13rem"
-            // }, 500, function () {
-            //     console.log('completed animation');
-            // });
+            $('#brandLogoPic').animate({
+                width: "14rem"
+            }, 10, function () {
+                console.log('completed animation');
+            });
         } else {
             $('nav').removeClass('white');
-            // $('#brandLogoPic').animate({
-            //     width: "15rem"
-            // }, 500, function () {
-            //     console.log('completed animation');
-            // });
+            $('#brandLogoPic').animate({
+                width: "15rem"
+            }, 10, function () {
+                console.log('completed animation');
+            });
         }
     })
   });

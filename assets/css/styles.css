@@ -39,9 +39,13 @@ nav li a {
     border-style: solid;
     border-width: 1px;
     border-color: tomato;
-    margin: 0 0.25rem;
-    padding-top: 0.25rem!important;
-    padding-bottom: 0.25rem!important;
+    margin: 0.8rem 0.50rem;
+    padding: 0.6rem 0.75rem;
+    line-height: 2;
+}
+
+nav li {
+    padding-top: 1.5rem;
 }
 
 nav li a:hover {
