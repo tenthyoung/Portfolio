@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.sidenav').sidenav();
     $('.fixed-action-btn').floatingActionButton();
-    $('.parallax').parallax();
+    // $('.parallax').parallax();
     $('.tap-target').tapTarget();
     $('.tooltipped').tooltip();
 
@@ -9,9 +9,19 @@ $(document).ready(function(){
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > 300) {
-            $('nav').addClass('black');
+            $('nav').addClass('white');
+            // $('#brandLogoPic').animate({
+            //     width: "13rem"
+            // }, 500, function () {
+            //     console.log('completed animation');
+            // });
         } else {
-            $('nav').removeClass('black');
+            $('nav').removeClass('white');
+            // $('#brandLogoPic').animate({
+            //     width: "15rem"
+            // }, 500, function () {
+            //     console.log('completed animation');
+            // });
         }
     })
   });

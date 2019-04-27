@@ -1,15 +1,30 @@
 nav {
     position: fixed;
-    background: rgba(0,0,0, 0);
-    padding: 0px 20px;
+    background: #00000000;
+    padding-left: 4rem;
+    padding-right: 3rem;
+    height: 5rem!important;
+}
+
+.no-shadows {
+    box-shadow: none!important;
+}
+
+
+#brandLogoPic {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    width: 15rem;
 }
 
 section {
-    background-image: url('../images/arm-break-coffee-257897.jpg');
+    background-image: url('../images/orangehex.png');
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     width: 100%;
-    height: 800px;
+    height: 600px;
 }
 
 .box {
@@ -17,8 +32,22 @@ section {
     height: 1000px;
 }
 
+
+nav li a {
+    border-radius: 10rem;
+    color: tomato;
+    border-style: solid;
+    border-width: 1px;
+    border-color: tomato;
+    margin: 0 0.25rem;
+    padding-top: 0.25rem!important;
+    padding-bottom: 0.25rem!important;
+}
+
 nav li a:hover {
-    background: red;
+    background: tomato;
+    color: white;
+
 }
 
 
