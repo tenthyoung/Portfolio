@@ -3,10 +3,11 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
+    <title>Izzy Young's Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/styles.css" />
@@ -21,60 +22,226 @@
             <a href="#" class="">
                 <img src="./assets/images/PortfolioLogo.png" alt="Izzy Young Logo" id="brandLogoPic">
             </a>
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i id="side-nav-button" class="fas fa-bars"></i>
+            </a>
             <ul id="" class="right hide-on-med-and-down">
-                <li><a href="#about-me">About Me</a></li>
-                <li><a href="#l">Portfolio</a></li>
-                <li><a id="contact" href="#">Contact</a></li>
+                <li><a href="#about-me-container">About Me</a></li>
+                <li><a href="#portfolio-section">Portfolio</a></li>
+                <li><a id="contact" href="#contact-section">Contact</a></li>
             </ul>
         </div>
     </nav>
 
 
     <ul class="sidenav" id="mobile-demo">
-        <li><a href="sass.html">Sass</a></li>
-        <li><a href="badges.html">Components</a></li>
-        <li><a href="collapsible.html">JavaScript</a></li>
+        <li><a href="#about-me-container">About Me</a></li>
+        <li><a href="#portfolio-section">Portfolio</a></li>
+        <li><a href="#contact-section">Contact</a></li>
     </ul>
 
     <!--==========================================================-->
-    <!-- Jumbotron                                                -->  
+    <!-- Jumbotron                                                -->
     <!--==========================================================-->
-    <section id="about-me"> 
-        <div class="container">          
+    <section id="jumbotron"></section>
+
+    <!--==========================================================-->
+    <!-- About me                                                 -->
+    <!--==========================================================-->
+    <div id="about-me-container" class="box container ">
+        <div class="container">
+            <div class="row">
+                <div class="col s3"></div>
+                <div class="col s6 center">
+                    <h1>About Me</h1>
+                    <img id="profile-image" src="./assets/images/profilePic.jpeg" alt="Profile Pic">
+                </div>
+                <div class="col s3"></div>
+            </div>
         </div>
-
-    </section>
-    <!-- <div class="parallax-container">
-        <div class="parallax"><img class="img-responsive" src="../Portfolio/assets/images/arm-break-coffee-257897.jpg"></div>
-    </div> -->
-
-    <!--==========================================================-->
-    <!-- Projects                                                 -->
-    <!--==========================================================-->
-    <div class="box container green">
-
+        <div id="about-me-text">
+            <p>
+                I have spent about three years in teaching, finance, marketing, and customer service. There was one common theme that I found
+                in all of my work experience, things were inefficient. And I always thought of ways things could improve.
+                For example, my math students could have improved much more dramatically had they had the right software
+                to combine fun with spaced repetition and learning. The finance firm had so many repetitive tasks that could
+                easily be automated. The start up I worked at failed entirely because of inefficiencies in their code.
+            </p>
+            <p>
+                Again and again, wherever I looked I felt like things could be so easily improved with better software, but I didn't have
+                the abilities yet to build any of it. It was from that point on that I started to code more on my free time.
+                This finally brought me to attend a coding bootcamp at UCSD, where I have finally developed a well-rounded
+                understanding of web development to aid my Udemy courses.
+            </p>
+            <p>
+                As cheesy as it sounds, I truly believe that coding is very much in its own way a form of modern wizardry as Elon Musk describes.
+                We essentially can become like modern day alchemists and create something out of nothing. In an instant,
+                we can deploy solutions and value to billions of people around the world. I am not sure I can or will ever
+                find another field where I could do something like this.
+            </p>
+        </div>
     </div>
+    <!--===========================================================================================================================-->
+    <!-- Second Jumbotron -->
+    <!--===========================================================================================================================-->
+    <section id="jumbotron2"></section>
 
+    <!--===========================================================================================================================-->
+    <!-- Portfolio                                                                                                                 -->
+    <!--===========================================================================================================================-->
+    <section id="portfolio-section">
+        <div id="portfolio-container" class="container">
+            <h2 class="center-align">Portfolio</h2>
+            <div class="row">
+                <div class="col s0 m2"></div>
+                <div class="col s12 m8">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/pizzaPresto.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red">
+                                <i class="material-icons">send</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h3>Pizza Presto</h3>
+                            <p>This fun group project is a time-based trivia game, where you make pizza for Chef Linguini to
+                                earn points and satisfy customers. In this project, we utilized HTML, Materialize CSS, CSS,
+                                JavaScript, jQuery, Firebase, a Trivia API, Animate CSS, and a Joke API to make this fun-loving
+                                web game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s0 m2"></div>
+            </div>
+            <div class="row">
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/Giftastic.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/Giftastic/">
+                                <i class="material-icons">send</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h4>Giftastic</h4>
+                            <p>This solo project is a web app that allows you to dynamically render gifs according to various
+                                topics. Using the Giphy API, jQuery, AJAX, Javascript, Animate CSS, and Bootstrap CSS.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/PokemonMathFighter.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/Pokemon-Math-Fighter/">
+                                <i class="material-icons">send</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h4>Pokemon Math Fighter!</h4>
+                            <p>This solo project is another web game that allows the user to do more damage on their opponent
+                                based on how fast they solve a simple math problem. I used HTML, Bootstrap, CSS, Javascript,
+                                and jQuery to complete this game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/DefeatThanos.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/DefeatThanosGame/">
+                                <i class="material-icons">send</i>
+                            </a>
+                        </div>
+                        <div class="card-content">
+                            <h4>Defeat Thanos</h4>
+                            <p> This solo project is another game where you click on the Avengers to do damage on Thanos. If
+                                you perfectly hit 0, an infinity stone is destroyed, and you proceed to the next level. I
+                                used HTML, Bootstrap, CSS, Javascript, and jQuery to complete this game.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--===========================================================================================================================-->
+    <!-- Contact                                                                                                                   -->
+    <!--===========================================================================================================================-->
+    <section id="contact-section">
+        <div id="contact-container" class="container">
+            <h2 class="center-align">Contact</h2>
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">account_circle</i>
+                        <input id="icon_prefix" type="text" class="validate">
+                        <label for="icon_prefix">Email</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <i class="material-icons prefix">phone</i>
+                        <input id="icon_telephone" type="tel" class="validate">
+                        <label for="icon_telephone">Telephone</label>
+                    </div>
+                </div>
+            </form>
+
+            <div class="row">
+                <div class="input-field col s12 ">
+                    <textarea id="textarea1" class="materialize-textarea"></textarea>
+                    <label for="textarea1">Textarea</label>
+                </div>
+            </div>
+
+            <a class="waves-effect waves-light btn-small red">
+                <i class="material-icons right">send</i>Submit</a>
+            </form>
+
+        </div>
+    </section>
+
+
+
+    <!--===========================================================================================================================-->
+    <!-- Floating Action Button                                                                                                    -->
+    <!--===========================================================================================================================-->
     <div class="fixed-action-btn">
         <a class="btn-floating btn-large red">
             <i class="large material-icons">menu</i>
         </a>
         <ul>
-            <li><a id="resume" class="btn-floating amber tooltipped" data-position="left" data-tooltip="Resume"><i class="material-icons">account_box</i></a></li>
-            <li><a id="linkedin" class="btn-floating blue darken-1 tooltipped" data-position="left" data-tooltip="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
-            <li><a id="github" class="btn-floating purple lighten-1 tooltipped" data-position="left" data-tooltip="Github"><i class="fab fa-github"></i></a></li>
+            <li>
+                <a id="resume" class="btn-floating amber tooltipped" data-position="left" data-tooltip="Resume" href="https://docs.google.com/document/d/1lF10KFs-UKA9pXBmlBNDjl4S_kWLYPxhO3RheelxVQ8/edit?usp=sharing">
+                    <i class="material-icons">account_box</i>
+                </a>
+            </li>
+            <li>
+                <a id="linkedin" class="btn-floating blue darken-1 tooltipped" data-position="left" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/tenthyoung/">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </li>
+            <li>
+                <a id="github" class="btn-floating purple lighten-1 tooltipped" data-position="left" data-tooltip="Github" href="https://github.com/tenthyoung">
+                    <i class="fab fa-github"></i>
+                </a>
+            </li>
         </ul>
     </div>
-
-      <!-- Tap Target Structure -->
-    <!-- <div class="tap-target" data-target="menu">
-        <div class="tap-target-content">
-            <h5>Title</h5>
-            <p>A bunch of text</p>
+    <!--===========================================================================================================================-->
+    <!-- Footer                                                                                                                    -->
+    <!--===========================================================================================================================-->
+    <footer class="page-footer red">
+        <div class="footer-copyright">
+            <div class="container">
+                © 2019 Copyright
+            </div>
         </div>
-    </div>   -->
-    <!-- Compiled and minified JavaScript -->
+    </footer>
+
     <script src="./assets/javascript/jquery.js"></script>
     <script src="./assets/javascript/main.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
