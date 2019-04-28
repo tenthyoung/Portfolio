@@ -120,17 +120,11 @@ footer {
 /*===========================================================*/
 /* 600,992, 2300 */
 @media only screen and (max-width: 600px) {
-    body {
-        color: red;
-    }
 
     nav {
         background: white;
     }
 
-    #brandLogoPic {
-        width: 10rem;
-    }
 
     #jumbotron {
         background-image: url('../images/arm-break-coffee-257897.jpg');

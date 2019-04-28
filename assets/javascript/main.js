@@ -24,5 +24,14 @@ $(document).ready(function(){
             });
         }
     })
+
+    $(window).resize(function(){
+        if ($(window).width() <= 600){	
+            $('#brandLogo').addClass("center");
+        } else {
+            $('#brandLogo').removeClass("center");
+            
+        }
+    });
   });
   
