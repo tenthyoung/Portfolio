@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.png" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- iconscout -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v1.0.0/css/unicons.css">
+
     <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/styles.css" />
-    <script src="//instant.page/1.2.2" type="module" integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
+    <script src="//instant.page/1.2.2" type="module"
+        integrity="sha384-2xV8M5griQmzyiY3CDqh1dn4z3llDVqZDqzjzcY+jCBCk/a5fXJmuZ/40JJAPeoU"></script>
 </head>
 <body>
     <!--==========================================================-->
@@ -21,13 +26,14 @@
     <nav class="no-shadows">
         <div class="no-shadows">
             <a id="brandLogo" href="#" class="brand-logo">
-                <img src="./assets/images/PortfolioLogo.png" alt="Izzy Young Logo" id="brandLogoPic">
+                <!-- <img src="./assets/images/PortfolioLogo.png" alt="Izzy Young Logo" id="brandLogoPic"> -->
+                IZZY YOUNG
             </a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger">
                 <i id="side-nav-button" class="fas fa-bars"></i>
             </a>
             <ul id="" class="right hide-on-med-and-down">
-                <li><a href="#about-me-container">About Me</a></li>
+                <li><a href="#about-me-container">About</a></li>
                 <li><a href="#portfolio-section">Portfolio</a></li>
                 <li><a id="contact" href="#contact-section">Contact</a></li>
             </ul>
@@ -44,186 +50,585 @@
     <!--==========================================================-->
     <!-- Jumbotron                                                -->
     <!--==========================================================-->
-    <section id="jumbotron"></section>
+    <!-- <section id="jumbotron"></section> -->
 
     <!--==========================================================-->
     <!-- About me                                                 -->
     <!--==========================================================-->
-    <div id="about-me-container" class="box container ">
-        <div class="container">
-            <div class="row">
-                <div class="col s3"></div>
-                <div class="col s6 center">
-                    <h1>About Me</h1>
-                    <img id="profile-image" src="./assets/images/profilePic.jpeg" alt="Profile Pic">
+    <div id="about-me-container" class="">
+        <div class="row">
+            <div id="about-me-inner-container" class="col s12 m10 offset-m1 l8 offset-l2">
+                <div id="aboutMeRow" class="container center">
+                    <div id="profile-image-container" class="col s12">
+                        <img id="profile-image" src="./assets/images/profilePic.jpeg" alt="Profile Pic">
+                        <!-- <img id="profile-image" class="" src="./assets/images/avatar.svg" alt="Profile Pic"> -->
+                    </div>
+                    <br>
+                    <br>
+                    <div id="about-me-text-container" class="container">
+                        <p id="about-me-text" class="center">
+                            Jr Full Stack Developer
+                        </p>
+                        <!-- <div class="row proficient skillbox center">
+                            <h3 class="center skillTitle">Contact</h3>
+                            <br>
+                            <div class="chip">tenthyoung@gmail.com</div>
+                            <div class="chip">408-921-5539</div>
+                        </div> -->
+                        <div class="row proficient skillbox center">
+                            <h3 class="center skillTitle">Proficient</h3>
+                            <br>
+                            <div class="chip">
+                                HTML5
+                            </div>
+                            <div class="chip">
+                                CSS3
+                            </div>
+                            <div class="chip">
+                                Javascript
+                            </div>
+                            <div class="chip">
+                                jQuery
+                            </div>
+                            <div class="chip">
+                                ES6+
+                            </div>
+                            <div class="chip">
+                                ReactJS
+                            </div>
+                            <div class="chip">
+                                MongoDB
+                            </div>
+                            <div class="chip">
+                                ExpressJS
+                            </div>
+                            <div class="chip">
+                                MySQL
+                            </div>
+                            <div class="chip">
+                                NodeJS
+                            </div>
+                            <div class="chip">
+                                HandlebarsJS
+                            </div>
+                            <div class="chip">
+                                Firebase
+                            </div>
+                            <div class="chip">
+                                Bootstrap
+                            </div>
+                            <div class="chip">
+                                Materialize CSS
+                            </div>
+                            <div class="chip">
+                                Bulma
+                            </div>
+                            <div class="chip">
+                                Heroku
+                            </div>
+                        </div>
+                        <div class="row priorExperience skillbox center">
+                            <h3 class="center skillTitle">Prior Experience</h3>
+                            <br>
+                            <div class="chip">
+                                C++
+                            </div>
+                            <div class="chip">
+                                Python
+                            </div>
+                            <div class="chip">
+                                Flutter
+                            </div>
+                            <div class="chip">
+                                Dart
+                            </div>
+                        </div>
+                        <ul class="row center">
+                            <div class="col s2 offset-s3">
+                                <li>
+                                    <a id="resume" class="btn-floating linkbtn tooltipped" data-position="bottom" target="_blank" data-tooltip="Resume" href="https://docs.google.com/document/d/1PQ14hQnqq0NMtmmtb-ic1WnDScOTBASxGiJo7o32odo/edit?usp=sharing">
+                                        <i class="material-icons">account_box</i>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col s2">
+                                <li>
+                                    <a id="linkedin" class="btn-floating linkbtn tooltipped" target="_blank" data-position="bottom" data-tooltip="LinkedIn" href="https://www.linkedin.com/in/tenthyoung/">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </li>
+                            </div>
+                            <div class="col s2">
+                                <li>
+                                    <a id="github" class="btn-floating linkbtn tooltipped" target="_blank" data-position="bottom" data-tooltip="Github" href="https://github.com/tenthyoung">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </li>
+                            </div>
+                        </ul>
+
+                    </div>
                 </div>
-                <div class="col s3"></div>
             </div>
         </div>
-        <div id="about-me-text">
-            <p>
-                I have spent about three years in teaching, finance, marketing, and customer service. There was one common theme that I found
-                in all of my work experience, things were inefficient. And I always thought of ways things could improve.
-                For example, my math students could have improved much more dramatically had they had the right software
-                to combine fun with spaced repetition and learning. The finance firm had so many repetitive tasks that could
-                easily be automated. The start up I worked at failed entirely because of inefficiencies in their code.
-            </p>
-            <p>
-                Again and again, wherever I looked I felt like things could be so easily improved with better software, but I didn't have
-                the abilities yet to build any of it. It was from that point on that I started to code more on my free time.
-                This finally brought me to attend a coding bootcamp at UCSD, where I have finally developed a well-rounded
-                understanding of web development to aid my Udemy courses.
-            </p>
-            <p>
-                As cheesy as it sounds, I truly believe that coding is very much in its own way a form of modern wizardry as Elon Musk describes.
-                We essentially can become like modern day alchemists and create something out of nothing. In an instant,
-                we can deploy solutions and value to billions of people around the world. I am not sure I can or will ever
-                find another field where I could do something like this.
-            </p>
-        </div>
-    </div>
-    <!--===========================================================================================================================-->
-    <!-- Second Jumbotron -->
-    <!--===========================================================================================================================-->
-    <section id="jumbotron2"></section>
 
+    </div>
     <!--===========================================================================================================================-->
     <!-- Portfolio                                                                                                                 -->
     <!--===========================================================================================================================-->
     <section id="portfolio-section">
         <div id="portfolio-container" class="container">
-            <h2 class="center-align">Portfolio</h2>
+            <h2 class="sectionTitle center-align">Featured</h2>
+            <!--=======================================================================-->
+            <!-- Featured Projects                                                     -->
+            <!--=======================================================================-->
             <div class="row">
-                <div class="col s12 m8 offset-m2">
+                <div class="col s12 m10 offset-m1 l8 offset-l2 projectCard">
                     <div class="card">
                         <div class="card-image">
-                            <img src="./assets/images/pizzaPresto.png">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/PizzaPresto/">
-                                <i class="material-icons">send</i>
+                            <img src="./assets/images/minimaliste.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://minimaliste.herokuapp.com">
+                                <i class="material-icons">play_circle_filled</i>;
                             </a>
                         </div>
-                        <div class="card-content">
+                        <div class="card-content center">
+                            <h3>Minimaliste</h3>
+
+                            <div class="chip">
+                                MongoDB/Mongoose
+                            </div>
+                            <div class="chip">
+                                ExpressJS
+                            </div>
+                            <div class="chip">
+                                ReactJS
+                            </div>
+                            <div class="chip">
+                                NodeJS
+                            </div>
+                            <div class="chip">
+                                Bulma CSS
+                            </div>
+                            <div class="chip">
+                                Heroku
+                            </div>
+                            <div class="chip">
+                                bCrypt
+                            </div>
+                            <div class="chip">
+                                Stripe API
+                            </div>
+                            <br>
+                            <div class="githubLink center">
+                                <a href="https://github.com/tenthyoung/Minimaliste" target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/pizzaprestoSmall.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/Face-Detector/">
+                                <i class="material-icons">play_circle_filled</i>;
+                            </a>
+                        </div>
+                        <div class="card-content center">
+                            <h3>Face Detector</h3>
+
+                            <div class="chip">
+                                HTML
+                            </div>
+                            <div class="chip">
+                                CSS
+                            </div>
+                            <div class="chip">
+                                ReactJS
+                            </div>
+                            <div class="chip">
+                                Tachyons
+                            </div>
+                            <div class="chip">
+                                Clarifai API
+                            </div>
+                            <br>
+                            <div class="githubLink center">
+                                <a href="https://github.com/tenthyoung/Face-Detector" target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="./assets/images/pizzaprestoSmall.png">
+                            <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/PizzaPresto/">
+                                <i class="material-icons">play_circle_filled</i>;
+                            </a>
+                        </div>
+                        <div class="card-content center">
                             <h3>Pizza Presto</h3>
-                            <p>This fun group project is a time-based trivia game, where you make pizza for Chef Linguini to
-                                earn points and satisfy customers. In this project, we utilized HTML, Materialize CSS, CSS,
-                                JavaScript, jQuery, Firebase, a Trivia API, Animate CSS, and a Joke API to make this fun-loving
-                                web game.
-                            </p>
+
+                            <div class="chip">
+                                HTML
+                            </div>
+                            <div class="chip">
+                                CSS
+                            </div>
+                            <div class="chip">
+                                Materialize
+                            </div>
+                            <div class="chip">
+                                Javascript
+                            </div>
+                            <div class="chip">
+                                jQuery
+                            </div>
+                            <div class="chip">
+                                Firebase
+                            </div>
+                            <div class="chip">
+                                Trivia API
+                            </div>
+                            <br>
+                            <div class="githubLink center">
+                                <a href="https://github.com/tenthyoung/Minimaliste" target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <!--=======================================================================-->
+            <!-- Minor Projects                                                     -->
+            <!--=======================================================================-->
             <div class="row">
-                <div class="col s12 m8 offset-m2 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/images/Giftastic.png">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/Giftastic/">
-                                <i class="material-icons">send</i>
+                <h2 class="sectionTitle center-align">Minor Projects</h2>
+
+                <!-- Pokemon Clicker -->
+                <div class='row'>
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/pokemonClicker.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/Pokemon-Clicker/">
+                                <i class="material-icons">play_circle_filled</i>
                             </a>
+                            </div>;
+                            <div class="card-content center">
+                                <h5>Pokemon Clicker</h5>
+
+                                <div class="chip">
+                                    HTML
+                                </div>
+                                <div class="chip">
+                                    CSS
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <div class="chip">
+                                    ReactJS
+                                </div>
+                                <div class="chip">
+                                    BulmaCSS
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://github.com/tenthyoung/Pokemon-Clicker"  target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h4>Giftastic</h4>
-                            <p>This solo project is a web app that allows you to dynamically render gifs according to various
-                                topics. Using the Giphy API, jQuery, AJAX, Javascript, Animate CSS, and Bootstrap CSS.
-                            </p>
+                    </div>
+                    <!-- Value Dating -->
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/valueDating.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://valuedating.herokuapp.com">
+                                <i class="material-icons">play_circle_filled</i>
+                            </a>
+                            </div>;
+                            <div class="card-content center">
+                                <h5>Value Dating</h5>
+
+                                <div class="chip">
+                                    HTML
+                                </div>
+                                <div class="chip">
+                                    CSS
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <div class="chip">
+                                    jQuery
+                                </div>
+                                <div class="chip">
+                                    ExpressJS
+                                </div>
+                                <div class="chip">
+                                    NodeJS
+                                </div>
+                                <div class="chip">
+                                    Materialize CSS
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://github.com/tenthyoung/Value-Datiing"  target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Liri Bot -->
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/liri.png">
+                            </div>
+                            <div class="card-content center">
+                                <h5>Liri Bot</h5>
+
+                                <div class="chip">
+                                    Node JS
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <div class="chip">
+                                    Spotify API
+                                </div>
+                                <div class="chip">
+                                    OMDB API
+                                </div>
+                                <div class="chip">
+                                    Bands In Town API
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://github.com/tenthyoung/LIRI-Node-App"  target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col s12 m8 offset-m2 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/images/PokemonMathFighter.png">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/Pokemon-Math-Fighter/">
-                                <i class="material-icons">send</i>
+
+                <div class='row'>
+                    <!-- Giftastic -->
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/Giftastic.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/Giftastic/">
+                                <i class="material-icons">play_circle_filled</i>
                             </a>
+                            </div>
+                            <div class="card-content center">
+                                <h5>Giftastic</h5>
+
+                                <div class="chip">
+                                    HTML
+                                </div>
+                                <div class="chip">
+                                    CSS
+                                </div>
+                                <div class="chip">
+                                    Bootstrap
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <div class="chip">
+                                    jQuery
+                                </div>
+                                <div class="chip">
+                                    AJAX
+                                </div>
+                                <div class="chip">
+                                    Giphy API
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://github.com/tenthyoung/Giftastic"  target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h4>Pokemon Math Fighter!</h4>
-                            <p>This solo project is another web game that allows the user to do more damage on their opponent
-                                based on how fast they solve a simple math problem. I used HTML, Bootstrap, CSS, Javascript,
-                                and jQuery to complete this game.
-                            </p>
+                    </div>
+                    <!-- Pokemon Math Fighter -->
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/PokemonMathFighter.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/Pokemon-Math-Fighter/">
+                                <i class="material-icons">play_circle_filled</i>
+                            </a>
+                            </div>
+                            <div class="card-content center">
+                                <h5>Pokemon Math Fighter</h5>
+
+                                <div class="chip">
+                                    HTML
+                                </div>
+                                <div class="chip">
+                                    CSS
+                                </div>
+                                <div class="chip">
+                                    Bootstrap
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <div class="chip">
+                                    jQuery
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://tenthyoung.github.io/Pokemon-Math-Fighter/"  target="_blank" class="center" >
+                                        <i class='uil uil-github'></i>
+                                        Github
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Defeat Thanos -->
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/DefeatThanos.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/DefeatThanosGame/">
+                                <i class="material-icons">play_circle_filled</i>
+                            </a>
+                            </div>
+                            <div class="card-content center">
+                                <h5>Defeat Thanos</h5>
+
+                                <div class="chip">
+                                    HTML
+                                </div>
+                                <div class="chip">
+                                    CSS
+                                </div>
+                                <div class="chip">
+                                    Bootstrap
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <div class="chip">
+                                    jQuery
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://github.com/tenthyoung/DefeatThanosGame"  target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <!-- Card -->
-                <div class="col s12 m8 offset-m2 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/images/DefeatThanos.png">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/DefeatThanosGame/">
-                                <i class="material-icons">send</i>
+
+                <div class='row'>
+                    <!-- Color Game -->
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/colorGame.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/Color-Game/">
+                                <i class="material-icons">play_circle_filled</i>
                             </a>
+                            </div>
+                            <div class="card-content center">
+                                <h5>Color Game</h5>
+
+                                <div class="chip">
+                                    HTML
+                                </div>
+                                <div class="chip">
+                                    CSS
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://github.com/tenthyoung/Color-Game"  target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                                </div>
+                            </div>
                         </div>
-                        <div class="card-content">
-                            <h4>Defeat Thanos</h4>
-                            <p> This solo project is another game where you click on the Avengers to do damage on Thanos. If
-                                you perfectly hit 0, an infinity stone is destroyed, and you proceed to the next level. I
-                                used HTML, Bootstrap, CSS, Javascript, and jQuery to complete this game.
-                            </p>
+                    </div>
+                    <!-- LOTR Hangman -->
+                    <div class="col s12 m8 offset-m2 l4">
+                        <div class="card">
+                            <div class="card-image">
+                                <img src="./assets/images/LOTR.png">
+                                <a class="btn-floating halfway-fab waves-effect waves-light"  target="_blank" href="https://tenthyoung.github.io/LordOfTheRings-Hangman/">
+                                <i class="material-icons">play_circle_filled</i>
+                            </a>
+                            </div>
+                            <div class="card-content center">
+                                <h5>LOTR Hangman</h5>
+
+                                <div class="chip">
+                                    HTML
+                                </div>
+                                <div class="chip">
+                                    CSS
+                                </div>
+                                <div class="chip">
+                                    Bootstrap
+                                </div>
+                                <div class="chip">
+                                    Javascript
+                                </div>
+                                <br>
+                                <div class="githubLink center">
+                                    <a href="https://github.com/tenthyoung/LordOfTheRings-Hangman"  target="_blank" class="center" >
+                                    <i class='uil uil-github'></i>
+                                    Github
+                                </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <br>
-
-            <div class="row">
-                <!-- Card -->
-                <div class="col s12 m8 offset-m2 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/images/todoList.png">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/To-Do-List/">
-                                <i class="material-icons">send</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <h4>To Do List</h4>
-                            <p> A simple To Do List App created using HTML, CSS, Javascript, and jQuery.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card -->
-                <div class="col s12 m8 offset-m2 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/images/colorGame.png">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/Color-Game/">
-                                <i class="material-icons">send</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <h4>Color Game</h4>
-                            <p> An interactive color game to help the user learn RGB() colors, using HTML, CSS, and Javascript.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Card -->
-                <div class="col s12 m8 offset-m2 l4">
-                    <div class="card">
-                        <div class="card-image">
-                            <img src="./assets/images/LOTR.png">
-                            <a class="btn-floating halfway-fab waves-effect waves-light red" href="https://tenthyoung.github.io/LordOfTheRings-Hangman/">
-                                <i class="material-icons">send</i>
-                            </a>
-                        </div>
-                        <div class="card-content">
-                            <h4>Hangman Game</h4>
-                            <p> Guess the letters and save Middle Earth. I used HTML, CSS, Bootstrap, and Javascript for this.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- start a new row -->
 
         </div>
+
+        <!-- start a new row -->
+
     </section>
+
 
     <!--===========================================================================================================================-->
     <!-- Contact                                                                                                                   -->
@@ -231,29 +636,32 @@
     <section id="contact-section">
         <div id="contact-container" class="container">
             <h2 class="center-align">Contact</h2>
-            <form class="col s12" action="mailto: tenthyoung@gmail.com">
-                <div class="row">
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">account_circle</i>
-                        <input id="icon_prefix" type="text" class="validate">
-                        <label for="icon_prefix">Email</label>
-                    </div>
-                    <div class="input-field col s6">
-                        <i class="material-icons prefix">phone</i>
-                        <input id="icon_telephone" type="tel" class="validate">
-                        <label for="icon_telephone">Telephone</label>
-                    </div>
+            <p class="center-align blue-grey-text lighten-text-4">Phone: 408-921-5539 | tenthyoung@gmail.com</p>
+            <form action="https://formspree.io/tenthyoung@gmail.com" method="POST" class="center" />
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate" name="email">
+                    <label for="icon_prefix">Email</label>
                 </div>
-
-                <div class="row">
-                    <div class="input-field col s12 ">
-                        <textarea id="textarea1" class="materialize-textarea"></textarea>
-                        <label for="textarea1">Textarea</label>
-                    </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate" name="phone">
+                    <label for="icon_telephone">Phone</label>
                 </div>
+            </div>
 
-                <a class="waves-effect waves-light btn-small red">
-                    <i class="material-icons right">send</i>Submit</a>
+            <div class="row">
+                <div class="input-field col s12 ">
+                    <textarea id="textarea1" class="materialize-textarea" name="message"></textarea>
+                    <label for="textarea1">Message</label>
+                </div>
+            </div>
+
+            <button class="waves-effect waves-light btn" type="submit">
+                <i class="material-icons right">play_circle_filled</i>
+                Submit
+            </button>
             </form>
 
         </div>
@@ -265,12 +673,12 @@
     <!-- Floating Action Button                                                                                                    -->
     <!--===========================================================================================================================-->
     <div class="fixed-action-btn">
-        <a class="btn-floating btn-large red">
+        <a class="btn-floating btn-large">
             <i class="large material-icons">menu</i>
         </a>
         <ul>
             <li>
-                <a id="resume" class="btn-floating amber tooltipped" data-position="left" data-tooltip="Resume" href="https://docs.google.com/document/d/1lF10KFs-UKA9pXBmlBNDjl4S_kWLYPxhO3RheelxVQ8/edit?usp=sharing">
+                <a id="resume" class="btn-floating amber tooltipped" data-position="left" data-tooltip="Resume" href="https://docs.google.com/document/d/1PQ14hQnqq0NMtmmtb-ic1WnDScOTBASxGiJo7o32odo/edit?usp=sharing">
                     <i class="material-icons">account_box</i>
                 </a>
             </li>
@@ -289,7 +697,7 @@
     <!--===========================================================================================================================-->
     <!-- Footer                                                                                                                    -->
     <!--===========================================================================================================================-->
-    <footer class="page-footer red">
+    <footer class="page-footer">
         <div class="footer-copyright">
             <div class="container">
                 © 2019 Copyright

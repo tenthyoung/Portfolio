@@ -1,7 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: #222831;
+    font-size: 16px;
+
 }
+
+.scrollNavColor {
+    background-color: #393e46;
+}
+
+.sectionTitle {
+    font-size: 3rem;
+    border-radius: 10px;
+    color: #eeeeee;
+    padding: 10px;
+    padding-top: 50px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card {
+    border-radius: 10px !important;
+}
+
+.card-content {
+    background-color: #eeeeee;
+    border-bottom-left-radius: 10px !important;
+    border-bottom-right-radius: 10px !important;
+}
+
+.btn-floating, .btn {
+    background-color: #00adb5 !important;
+}
+
+.linkbtn {
+    background-color: #393e46 !important;
+}
+
+/* label focus color */
+.input-field input:focus + label {
+    color: #00adb5 !important;
+  }
+  /* label underline focus color */
+  .row .input-field input:focus {
+    border-bottom: 1px solid #00adb5 !important;
+    box-shadow: 0 1px 0 0 #00adb5 !important
+  }
+
+/* Social media buttons */
+
 
 /*===========================================================*/
 /* Navbar                                                    */
@@ -13,74 +64,67 @@ nav {
     background: #00000000;
     padding-left: 4rem;
     padding-right: 3rem;
-    height: 5rem!important;
+    /* height: 5rem!important; */
+}
+
+.sidenav-trigger {
+    margin-left: 0 !important;
 }
 
 #side-nav-button {
-    color: tomato;
+    color: #eeeeee;
 }
 
 .no-shadows {
     box-shadow: none!important;
 }
 
+#brandLogo {
+    letter-spacing: 0.25rem;
+    font-size: 1.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+#brandLogo:hover {
+    letter-spacing: 0.20rem;
+}
 
 #brandLogoPic {
-    padding-top: 0.5rem;
-    padding-bottom: 1rem;
+    /* padding-top: 0.5rem; */
+    /* padding-bottom: 1rem; */
     width: 15rem;
 }
 
 nav li a {
-    border-radius: 10rem;
-    color: tomato;
-    border-style: solid;
+    /* background-color: #222831; */
+    /* border-radius: 5rem; */
+    color: #eeeeee;
+    /* border-style: solid;
     border-width: 1px;
-    border-color: tomato;
+    border-color: #eeeeee; */
     margin: 0.8rem 0.50rem;
     padding: 0.6rem 0.75rem;
     line-height: 2;
+    transition: 0.5s ease-in-out;
 }
 
 nav li {
     padding-top: 1.5rem;
 }
 
+
 nav li a:hover {
-    background: tomato;
-    color: white;
+    /* background: #eeeeee; */
+    /* color: #222831; */
+    font-size: 1.05rem;
 }
-
-/*===========================================================*/
-/* Jumbotron                                                 */
-/*===========================================================*/
-#jumbotron {
-    background-image: url('../images/arm-break-coffee-257897.jpg');
-    background-size: cover;
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 600px;
-}
-
-#jumbotron2 {
-    background-image: url('../images/create.jpg');
-    background-size: cover;
-    background-position: left bottom;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    width: 100%;
-    height: 500px;
-}
-
 
 /*===========================================================*/
 /* About Me                                                 */
 /*===========================================================*/
 .box {
-    margin-top: 20px;
-    height: 1000px;
+    padding: 100px;
+    height: 100vh;
 }
 
 
@@ -91,28 +135,91 @@ h1 {
     text-align: center;
 }
 
+.chip {
+    font-size: 0.8rem;
+}
+
+
+.skillTitle {
+    font-size: 1.25rem;
+    background-color: #00adb5;
+    border-radius: 10px;
+    color: #eeeeee;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+#aboutMeRow {
+    padding: 2rem;
+    padding-bottom: 0;
+    margin: 0 auto;
+}
+
+#profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about-me-text-container {
+    margin-bottom: 0;
+}
+
 #profile-image {
     border-radius: 50%;
+    width: 150px;
+    height: auto;
 }
 
 #about-me-text {
     font-size: 1.5rem;
 }
 
+#about-me-container {
+    padding-top: 75px;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100vw !important;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+#about-me-inner-container {
+    margin: 0;
+    width: 100%;
+    background-color: #eeeeee;
+    border-radius: 0;
+}
+
+
+
 /*===========================================================*/
 /* Porfolio                                                  */
 /*===========================================================*/
+.githubLink {
+    color: #00adb5;
+}
 
+#portfolio-section {
+    padding-top: 30px;
+    /* background-color: #eeeeee; */
+}
 /*===========================================================*/
 /* Contact                                                   */
 /*===========================================================*/
-
+#contact-section {
+    background-color: #eeeeee;
+    padding: 4rem;
+}
 /*===========================================================*/
 /* Footer                                                    */
 /*===========================================================*/
 footer {
     margin-bottom: 0;
-    margin-top: 5rem;
+    /* margin-top: 5rem; */
+    background-color: #393e46 !important;
 }
 
 /*===========================================================*/
@@ -121,11 +228,8 @@ footer {
 /* 600,992, 2300 */
 @media only screen and (max-width: 600px) {
 
-    nav {
-        background: white;
-    }
 
-
+/* 
     #jumbotron {
         background-image: url('../images/arm-break-coffee-257897.jpg');
         background-size: 100% auto;
@@ -134,7 +238,7 @@ footer {
         background-attachment: scroll;
         width: 100%;
         height: 300px;
-    }
+    } */
 
     #jumbotron2 {
         background-image: url('../images/create.jpg');
@@ -152,8 +256,19 @@ footer {
         text-align: center;
     }
 
-    #about-me-text {
-        font-size: 1.25rem;
+    #about-me-container {
+        padding-right: 0;
+        padding-left: 0;
+        width: 100%; 
+        width: 100vw;
+        margin: 0;
+    }
+    
+    #about-me-inner-container {
+        margin: 0;
+        width: 100%;
+        background-color: #eeeeee;
+        border-radius: 0;
     }
 
     .box {

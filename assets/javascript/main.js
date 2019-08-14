@@ -9,14 +9,14 @@ $(document).ready(function(){
 
     $(window).scroll(function() {
         if ($(window).scrollTop() > 5 || document.body.scrollTop > 5 || document.documentElement.scrollTop > 5 ) {
-            $('nav').addClass('white');
+            $('nav').addClass('scrollNavColor');
             $('#brandLogoPic').animate({
                 width: "14.5rem"
             }, 15, "linear", function () {
                 console.log('completed animation');
             });
         } else {
-            $('nav').removeClass('white');
+            $('nav').removeClass('scrollNavColor');
             $('#brandLogoPic').animate({
                 width: "15rem"
             }, 15, "linear", function () {
