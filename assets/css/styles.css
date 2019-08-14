@@ -6,8 +6,8 @@ html, body {
     font-family: 'Lato', sans-serif;
     background-color: #222831;
     font-size: 16px;
-
 }
+
 
 .scrollNavColor {
     background-color: #393e46;
@@ -122,10 +122,10 @@ nav li a:hover {
 /*===========================================================*/
 /* About Me                                                 */
 /*===========================================================*/
-.box {
+/* .box {
     padding: 100px;
     height: 100vh;
-}
+} */
 
 
 h1 {
@@ -139,6 +139,10 @@ h1 {
     font-size: 0.8rem;
 }
 
+.skillbox {
+    max-width: 400px;
+    margin: 0 auto;
+}
 
 .skillTitle {
     font-size: 1.25rem;
@@ -171,27 +175,40 @@ h1 {
     border-radius: 50%;
     width: 150px;
     height: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#profile-image-container {
+    margin: 0;
+    padding: 0;
 }
 
 #about-me-text {
     font-size: 1.5rem;
 }
 
-#about-me-container {
-    padding-top: 75px;
-    padding-right: 0;
-    padding-left: 0;
-    width: 100vw !important;
-    margin-right: 0;
-    margin-left: 0;
+#navSpacingDiv {
+    height: 75px;
 }
 
-#about-me-inner-container {
-    margin: 0;
-    width: 100%;
+#about-me-container {
+    /* margin-top: 150px;; */
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 0;
+    margin-left: 0;
     background-color: #eeeeee;
-    border-radius: 0;
+
 }
+
+
+
+
 
 
 
@@ -256,7 +273,7 @@ footer {
         text-align: center;
     }
 
-    #about-me-container {
+    /* #about-me-container {
         padding-right: 0;
         padding-left: 0;
         width: 100%; 
@@ -269,7 +286,8 @@ footer {
         width: 100%;
         background-color: #eeeeee;
         border-radius: 0;
-    }
+    } */
+
 
     .box {
         height: 100%;
