@@ -1,4 +1,4 @@
 # Portfolio
-A portfolio of all my notable projects.
+My official portfolio for all of my projects.
 
-https://tenthyoung.github.io/Portfolio/
+www.tenthyoung.com
